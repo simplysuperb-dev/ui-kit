@@ -1,6 +1,6 @@
 {
   "name": "@simplysuperb-dev/ui-kit",
-  "version": "1.0.0",
+  "version": "1.0.0-canary.0",
   "description": "A Tailwind CSS plugin for applying styles based on the SSB.'s design system.",
   "main": "src/index.js",
   "scripts": {
