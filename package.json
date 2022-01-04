@@ -1,8 +1,8 @@
 {
-  "name": "@simplysuperb-dev/ui-kit",
+  "name": "@simplysuperb/ui-kit",
   "version": "1.0.0-canary.0",
   "description": "A Tailwind CSS plugin for applying styles based on the SSB.'s design system.",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
