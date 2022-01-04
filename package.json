@@ -1,0 +1,29 @@
+{
+  "name": "@simplysuperb-dev/ui-kit",
+  "version": "1.0.0",
+  "description": "A Tailwind CSS plugin for applying styles based on the SSB.'s design system.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplysuperb-dev/ui-kit.git"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "ui",
+    "kit",
+    "theme"
+  ],
+  "author": "Ivanka Todorova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simplysuperb-dev/ui-kit/issues"
+  },
+  "homepage": "https://github.com/simplysuperb-dev/ui-kit#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.9"
+  }
+}
