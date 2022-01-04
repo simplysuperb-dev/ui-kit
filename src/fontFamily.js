@@ -1,5 +1,5 @@
 let fontFamily = {
-    merriweather: 'Merriweather, serif'
+    merriweather: ['Merriweather', 'serif'],
 };
 
 module.exports = fontFamily;

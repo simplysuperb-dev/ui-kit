@@ -2,7 +2,7 @@ const uiKit = require('./src/main');
 
 module.exports = {
     mode: 'jit',
-    content: ["./dist/**/*.{html,js}"],
+    content: ["./docs/**/*.{html,js}"],
     plugins: [
         uiKit
     ],

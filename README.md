@@ -30,7 +30,7 @@ module.exports = {
 Run:
 
 ```
-npx tailwindcss -i src/style.css -o dist/style.css --watch
+npx tailwindcss -i src/style.css -o docs/style.css --watch
 ```
 
 and use `/dist/style.css` in your HTML file:

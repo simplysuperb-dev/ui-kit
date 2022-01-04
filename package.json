@@ -4,6 +4,8 @@
   "description": "A Tailwind CSS plugin for applying styles based on the SSB.'s design system.",
   "main": "src/main.js",
   "scripts": {
+    "css:dev": "npx tailwindcss -i src/style.css -o docs/style.css --watch",
+    "start:dev": "live-server --open=docs/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/simplysuperb-dev/ui-kit#readme",
   "devDependencies": {
+    "live-server": "^1.2.1",
     "tailwindcss": "^3.0.9"
   }
 }
