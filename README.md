@@ -27,14 +27,14 @@ module.exports = {
 
 ## Modifying
 
-Run:
+Run TailwindCSS's watcher before modifying the css:
 
 ```
-npx tailwindcss -i src/style.css -o docs/style.css --watch
+npm run css:dev
 ```
 
-and use `/dist/style.css` in your HTML file:
+To preview any changes to the css use:
 
-```html 
-<link rel="stylesheet" type="text/css" href="/dist/styles.css">
+```
+npm run start:dev
 ```
