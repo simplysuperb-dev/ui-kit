@@ -6,8 +6,7 @@ const font = require('./font');
 
 module.exports = plugin(function ({ addComponents, theme, e }) {
     addComponents([
-        font.sans,
-        font.serif,
+        font.faces,
         link({ theme, e }),
         list({ theme, e }),
     ]);
