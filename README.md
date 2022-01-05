@@ -1,5 +1,18 @@
 # ui-kit
+
+<a href="https://www.npmjs.com/package/@simplysuperb/ui-kit">
+    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@simplysuperb/ui-kit?style=flat">
+</a>
+<a href="https://github.com/simplysuperb-dev/ui-kit">
+    <img alt="GitHub Repo stars"
+        src="https://img.shields.io/github/stars/simplysuperb-dev/ui-kit?style=flat">
+</a>
+<a href="https://github.com/simplysuperb-dev/ui-kit">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/badge/view%20on-github-blue">
+</a>
+
 TailwindCSS powered UI kit following simply superb.'s design system.
+
 
 ## Available Styles
 
