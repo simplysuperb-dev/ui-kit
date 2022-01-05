@@ -1,7 +1,7 @@
 # ui-kit
 
 <a href="https://www.npmjs.com/package/@simplysuperb/ui-kit">
-    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@simplysuperb/ui-kit?style=flat">
+    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@simplysuperb-dev/ui-kit?style=flat">
 </a>
 <a href="https://github.com/simplysuperb-dev/ui-kit">
     <img alt="GitHub Repo stars"
