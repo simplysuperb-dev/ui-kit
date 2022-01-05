@@ -22,7 +22,7 @@ You can find all currently available styles at https://simplysuperb-dev.github.i
 
 Install the tailwindcss plugin:
 ```
-npm install --save-dev @simplysuperb/ui-kit
+npm install --save-dev @simplysuperb-dev/ui-kit
 ```
 
 Then require it in your `tailwind.config.js`:
@@ -32,7 +32,7 @@ Then require it in your `tailwind.config.js`:
 module.exports = {
     ...
     plugins: [
-        require('@simplysuperb/ui-kit')
+        require('@simplysuperb-dev/ui-kit')
     ],
 }
 ```
