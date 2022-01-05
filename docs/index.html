@@ -5,46 +5,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo - ssb.'s ui kit</title>
+    <title>Kitchen Sink &mdash; simplysuperb. ui kit</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="font-merriweather text-graphite desktop:p-10">
-    <div class="desktop:flex desktop:space-x-52">
-        <div class="my-5 desktop:my-0 ">
-            <p class="text-h4 text-green">Colors</p>
-            <hr class="border-porcelain my-5">
-            <p class="text-h3 text-graphite">Graphite</p>
-            <p class="text-h3 text-green">Green</p>
-            <p class="text-h3 text-green-secondary">Green Secondary</p>
-            <p class="text-h3 text-grey">Grey</p>
-            <p class="text-h3 text-porcelain">Porcelain</p>
-            <p class="text-h3 text-orange">Orange</p>
-            <p class="text-h3 text-orange-secondary">Orange Secondary</p>
-            <p class="text-h3 text-blue">Blue Secondary</p>
-            <p class="text-h3 text-blue-secondary">Blue Secondary</p>
-            <p class="text-h3 text-yellow">Yellow</p>
-        </div>
+<body class="text-graphite p-5 desktop:p-10">
+    <div class="container mx-auto">
+        <h1 class="font-serif mb-5 desktop:text-h2 text-h3">simply <span class="text-green">superb</span>. ui kit</h1>
+        <p class="text-base font-sans">
+            This is a simple ui kit based on Tailwind CSS, that can be <a
+                href="https://github.com/simplysuperb-dev/ui-kit#installation" class="link link-green">easily
+                installed</a>, providing components like links, buttons, forms.
+        </p>
+        <div class="mt-2 flex space-x-2">
+            <a href="https://www.npmjs.com/package/@simplysuperb/ui-kit">
+                <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@simplysuperb/ui-kit?style=flat">
+            </a>
 
-        <div class="my-5 desktop:my-0">
-            <p class="text-h4 text-green">Typography</p>
-            <hr class="border-porcelain my-5">
-            <p class="text-h1">Text h1</p>
-            <p class="text-h2">Text h2</p>
-            <p class="text-h3">Text h3</p>
-            <p class="text-h4">Text h4</p>
-            <p class="text-h5">Text h5</p>
-            <p class="text-h6">Text h6</p>
-            <p class="text-base">Text Base</p>
-            <p class="text-overline">Text Overline</p>
-            <p class="text-caption">Text Caption</p>
-            <p class="text-subtitle">Text Subtitle</p>
-            <p class="text-h4 text-green mt-20">Fonts</p>
-            <hr class="border-porcelain my-5">
-            <p class="text-h3 font-merriweather">Merriweather</p>
-            <p class="text-h5 font-merriweather">The quick brown fox jumps over the lazy dog.</p>
-            <p class="text-h5 font-merriweather">Ах, чудна българска земьо, полюшвай цъфтящи жита!</p>
+            <a href="https://github.com/simplysuperb-dev/ui-kit">
+                <img alt="GitHub Repo stars"
+                    src="https://img.shields.io/github/stars/simplysuperb-dev/ui-kit?style=flat">
+            </a>
+            <a href="https://github.com/simplysuperb-dev/ui-kit">
+                <img alt="GitHub Repo stars" src="https://img.shields.io/badge/view%20on-github-blue">
+            </a>
         </div>
+        <hr class="border-porcelain my-10">
+
+        <section class="mb-20">
+            <h2 class="text-green font-serif mb-5 desktop:text-h3 text-h4">
+                <span class="text-grey/50">§</span> Colors
+            </h2>
+            <div class="flex flex-wrap desktop:justify-between">
+                <div class="w-20 h-20 bg-graphite text-white text-center flex justify-center items-center">
+                    <small>graphite</small>
+                </div>
+                <div class="w-20 h-20 bg-green text-white text-center flex justify-center items-center">
+                    <small>green</small>
+                </div>
+                <div class="w-20 h-20 bg-green-secondary text-white text-center flex justify-center items-center">
+                    <small>green secondary</small>
+                </div>
+                <div class="w-20 h-20 bg-grey text-white text-center flex justify-center items-center">
+                    <small>grey</small>
+                </div>
+                <div class="w-20 h-20 bg-porcelain text-graphite text-center flex justify-center items-center">
+                    <small>porcelain</small>
+                </div>
+                <div class="w-20 h-20 bg-orange text-white text-center flex justify-center items-center">
+                    <small>orange</small>
+                </div>
+                <div class="w-20 h-20 bg-orange-secondary text-white text-center flex justify-center items-center">
+                    <small>orange secondary</small>
+                </div>
+                <div class="w-20 h-20 bg-blue text-white text-center flex justify-center items-center">
+                    <small>blue</small>
+                </div>
+                <div class="w-20 h-20 bg-blue-secondary text-white text-center flex justify-center items-center">
+                    <small>blue secondary</small>
+                </div>
+                <div class="w-20 h-20 bg-yellow text-graphite text-center flex justify-center items-center">
+                    <small>yellow</small>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-20">
+            <h2 class="text-green font-serif mb-5 desktop:text-h3 text-h4"><span class="text-grey/50">§</span>
+                Typography</h2>
+            <p class="text-h4 font-serif mb-2">Merriweather</p>
+            <div class="font-serif text-h6">
+                <p class="font-thin">The quick brown fox jumps over the lazy dog.</p>
+                <p>The quick brown fox jumps over the lazy dog.</p>
+                <p class="font-bold">The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <p class="text-h4 font-sans mb-2 mt-10">Merriweather Sans</p>
+            <div class="font-sans text-h6">
+                <p class="font-thin">The quick brown fox jumps over the lazy dog.</p>
+                <p>The quick brown fox jumps over the lazy dog.</p>
+                <p class="font-bold">The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="font-serif mt-10">
+                <p class="text-h1">Text h1</p>
+                <p class="text-h2">Text h2</p>
+                <p class="text-h3">Text h3</p>
+                <p class="text-h4">Text h4</p>
+                <p class="text-h5">Text h5</p>
+                <p class="text-h6">Text h6</p>
+            </div>
+            <div class="font-sans">
+                <p class="font-sans">Text Base</p>
+                <p class="font-sans">Text Overline</p>
+                <p class="font-sans">Text Caption</p>
+                <p class="font-sans">Text Subtitle</p>
+            </div>
+
+
+            <pre class="bg-porcelain p-2 desktop:p-5 mt-10 overflow-auto">
+const HELLO = 'WORLD';
+const myHandler = (event) => {
+    return () => null;
+}
+</pre>
+
+            <div class="flex space-x-10 mt-10">
+                <div>
+                    <ul class="list list-green">
+                        <li>Milk</li>
+                        <li>Coffee</li>
+                        <li>Bread</li>
+                        <li>Cheetos</li>
+                    </ul>
+                </div>
+                <div>
+                    <ol class="list list-blue">
+                        <li>javascript</li>
+                        <li>c#</li>
+                        <li>python</li>
+                        <li>rust</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20">
+            <h2 class="text-green font-serif mb-5 desktop:text-h3 text-h4">
+                <span class="text-grey/50">§</span> Links
+            </h2>
+            <div class="flex flex-wrap">
+                <div class="p-2">
+                    <a href="javascript: false" class="link">Default link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-grey">Grey link</a>
+                </div>
+                <div class="p-2 bg-graphite">
+                    <a href="javascript: false" class="link link-white">White link</a>
+                </div>
+                <div class="p-2 bg-grey">
+                    <a href="javascript: false" class="link link-porcelain">Porcelain link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-green">Green link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-green-secondary">Green Secondary link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-blue">Blue link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-blue-secondary">Blue Secondary link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-orange">Orange link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-orange-secondary">Orange Secondary link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-yellow">Yellow link</a>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 

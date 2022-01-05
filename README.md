@@ -38,3 +38,17 @@ To preview any changes to the css use:
 ```
 npm run start:dev
 ```
+
+## Releasing new versions
+
+To update version of this package, use [`release`](https://www.npmjs.com/package/release):
+
+```
+release <type>
+```
+
+Then use `npm` to publish the version:
+
+```
+npm publish
+```
