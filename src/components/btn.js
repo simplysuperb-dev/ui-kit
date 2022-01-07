@@ -18,7 +18,7 @@ module.exports = ({ theme, e }) => {
             [`@apply ${e(`text-${key}`)}`]: {},
             [`@apply ${e(`border-${key}`)}`]: {},
             [`@apply ${e(`bg-${key}`)}`]: {},
-            '&:hover': {
+            '&:hover, &:active, &:focus': {
                 [`@apply ${e(`text-${activeColorKey}`)}`]: {},
                 [`@apply ${e(`border-${activeColorKey}`)}`]: {},
                 [`@apply ${e(`bg-${activeColorKey}`)}`]: {},
@@ -48,7 +48,7 @@ module.exports = ({ theme, e }) => {
         },
         '.btn-solid': {
             '@apply text-white': {},
-            '&:hover': {
+            '&:hover, &:active, &:focus': {
                 '@apply text-white': {},
             }
         },

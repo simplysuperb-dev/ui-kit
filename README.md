@@ -52,6 +52,12 @@ To preview any changes to the css use:
 npm run start:dev
 ```
 
+Or if you have [`concurrently`](https://www.npmjs.com/package/concurrently) installed use:
+
+```
+npm run dev
+```
+
 ## Releasing new versions
 
 To update version of this package, use [`release`](https://www.npmjs.com/package/release):

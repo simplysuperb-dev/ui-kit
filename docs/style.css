@@ -831,7 +831,7 @@ ol.list {
   background-color: rgb(152 184 139 / var(--tw-bg-opacity));
 }
 
-.btn-green:hover {
+.btn-green:hover, .btn-green:active, .btn-green:focus {
   --tw-text-opacity: 1;
   color: rgb(139 167 128 / var(--tw-text-opacity));
   --tw-border-opacity: 1;
@@ -849,7 +849,7 @@ ol.list {
   background-color: rgb(139 143 184 / var(--tw-bg-opacity));
 }
 
-.btn-blue:hover {
+.btn-blue:hover, .btn-blue:active, .btn-blue:focus {
   --tw-text-opacity: 1;
   color: rgb(93 100 165 / var(--tw-text-opacity));
   --tw-border-opacity: 1;
@@ -867,7 +867,7 @@ ol.list {
   background-color: rgb(219 164 117 / var(--tw-bg-opacity));
 }
 
-.btn-orange:hover {
+.btn-orange:hover, .btn-orange:active, .btn-orange:focus {
   --tw-text-opacity: 1;
   color: rgb(208 149 98 / var(--tw-text-opacity));
   --tw-border-opacity: 1;
@@ -885,7 +885,7 @@ ol.list {
   background-color: rgb(255 198 52 / var(--tw-bg-opacity));
 }
 
-.btn-yellow:hover {
+.btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus {
   --tw-text-opacity: 1;
   color: rgb(255 198 52 / var(--tw-text-opacity));
   --tw-border-opacity: 1;
@@ -908,7 +908,7 @@ ol.list {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.btn-solid:hover {
+.btn-solid:hover, .btn-solid:active, .btn-solid:focus {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
