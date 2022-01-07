@@ -2,6 +2,7 @@ const plugin = require('tailwindcss/plugin');
 
 const link = require('./components/link');
 const list = require('./components/list');
+const btn = require('./components/btn');
 const font = require('./font');
 
 module.exports = plugin(function ({ addComponents, theme, e }) {
@@ -9,10 +10,12 @@ module.exports = plugin(function ({ addComponents, theme, e }) {
         font.faces,
         link({ theme, e }),
         list({ theme, e }),
+        btn({ theme, e }),
     ]);
 }, {
     theme: {
         colors: {
+            transparent: 'transparent',
             white: '#FFFFFF',
             graphite: '#2e2e2e',
             grey: '#aaaaaa',
@@ -34,6 +37,7 @@ module.exports = plugin(function ({ addComponents, theme, e }) {
             caption: ['12px', '18px'],
             base: ['14px', '24px'],
             subtitle: ['16px', '22px'],
+            button: ['16px', '22px'],
             h1: ['96px', '120px'],
             h2: ['60px', '75px'],
             h3: ['48px', '60px'],
