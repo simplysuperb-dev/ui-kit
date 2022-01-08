@@ -3,7 +3,7 @@ module.exports = ({ theme, e }) => {
     const colors = theme('colors');
 
     const listColors = {};
-    for (const [key, value] of Object.entries(colors)) {
+    for (const [key] of Object.entries(colors)) {
         // filter out grey, default color
         if (key == 'grey') {
             continue;
@@ -11,7 +11,7 @@ module.exports = ({ theme, e }) => {
         listColors[`.${e(`list-${key}`)}`] = {
             '& > li': {
                 '&::marker': {
-                    color: value,
+                    [`@apply ${e(`text-${key}`)}`]: {},
                 }
             }
         };
@@ -20,16 +20,16 @@ module.exports = ({ theme, e }) => {
     return {
         '.list': {
             '& li': {
-                'margin-left': '30px',
+                '@apply ml-8': {},
                 '&::marker': {
-                    color: colors['grey'],
+                    '@apply text-grey': {},
                 }
             },
             'ul&': {
-                'list-style-type': 'disc',
+                '@apply list-disc': {},
             },
             'ol&': {
-                'list-style-type': 'counter',
+                '@apply list-decimal': {},
             }
         },
         ...listColors,

@@ -801,11 +801,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .list li {
-  margin-left: 30px;
+  margin-left: 2rem;
 }
 
 .list li::marker {
-  color: #aaaaaa;
+  --tw-text-opacity: 1;
+  color: rgb(170 170 170 / var(--tw-text-opacity));
 }
 
 ul.list {
@@ -813,23 +814,27 @@ ul.list {
 }
 
 ol.list {
-  list-style-type: counter;
+  list-style-type: decimal;
 }
 
 .list-green > li::marker {
-  color: #98b88b;
+  --tw-text-opacity: 1;
+  color: rgb(152 184 139 / var(--tw-text-opacity));
 }
 
 .list-blue > li::marker {
-  color: #8b8fb8;
+  --tw-text-opacity: 1;
+  color: rgb(139 143 184 / var(--tw-text-opacity));
 }
 
 .list-orange > li::marker {
-  color: #dba475;
+  --tw-text-opacity: 1;
+  color: rgb(219 164 117 / var(--tw-text-opacity));
 }
 
 .list-red > li::marker {
-  color: #cd5f5f;
+  --tw-text-opacity: 1;
+  color: rgb(205 95 95 / var(--tw-text-opacity));
 }
 
 .btn {
