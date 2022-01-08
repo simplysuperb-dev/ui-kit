@@ -7,7 +7,7 @@ module.exports = ({ theme }) => {
 
     return {
         '.ui-outline': {
-            '@apply outline-offset-2 outline-dotted': {},
+            '@apply outline-1 outline-offset-2 outline-dotted': {},
             'outline-color': tinyColor(colors.green).setAlpha(0.5).toString(),
         },
     }

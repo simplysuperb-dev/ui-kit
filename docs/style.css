@@ -668,139 +668,136 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .link {
-  transition-property: color;
-  transition-duration: 200ms;
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
   cursor: pointer;
-  color: #2e2e2e;
-  border-bottom: 2px solid #2e2e2e;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(46 46 46 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(46 46 46 / var(--tw-text-opacity));
 }
 
-.link:hover, .link:active, .link:focus {
-  color: #000;
-  border-color: #000;
+.link:active, .link:focus {
   outline-color: rgba(152, 184, 139, 0.5);
   outline-style: dotted;
+  outline-width: 1px;
   outline-offset: 2px;
 }
 
 .link-white {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .link-white:hover, .link-white:active, .link-white:focus {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .link-grey {
-  color: #aaaaaa;
-  border-color: #aaaaaa;
+  --tw-text-opacity: 1;
+  color: rgb(170 170 170 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(170 170 170 / var(--tw-border-opacity));
 }
 
 .link-grey:hover, .link-grey:active, .link-grey:focus {
-  color: #aaaaaa;
-  border-color: #aaaaaa;
+  --tw-text-opacity: 1;
+  color: rgb(170 170 170 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(170 170 170 / var(--tw-border-opacity));
 }
 
 .link-green {
-  color: #98b88b;
-  border-color: #98b88b;
+  --tw-text-opacity: 1;
+  color: rgb(152 184 139 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(152 184 139 / var(--tw-border-opacity));
 }
 
 .link-green:hover, .link-green:active, .link-green:focus {
-  color: #98b88b;
-  border-color: #98b88b;
-}
-
-.link-green-secondary {
-  color: #8ba780;
-  border-color: #8ba780;
-}
-
-.link-green-secondary:hover, .link-green-secondary:active, .link-green-secondary:focus {
-  color: #8ba780;
-  border-color: #8ba780;
+  --tw-text-opacity: 1;
+  color: rgb(139 167 128 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(139 167 128 / var(--tw-border-opacity));
 }
 
 .link-porcelain {
-  color: #f1f3f4;
-  border-color: #f1f3f4;
+  --tw-text-opacity: 1;
+  color: rgb(241 243 244 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(241 243 244 / var(--tw-border-opacity));
 }
 
 .link-porcelain:hover, .link-porcelain:active, .link-porcelain:focus {
-  color: #f1f3f4;
-  border-color: #f1f3f4;
+  --tw-text-opacity: 1;
+  color: rgb(241 243 244 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(241 243 244 / var(--tw-border-opacity));
 }
 
 .link-blue {
-  color: #8b8fb8;
-  border-color: #8b8fb8;
+  --tw-text-opacity: 1;
+  color: rgb(139 143 184 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(139 143 184 / var(--tw-border-opacity));
 }
 
 .link-blue:hover, .link-blue:active, .link-blue:focus {
-  color: #8b8fb8;
-  border-color: #8b8fb8;
-}
-
-.link-blue-secondary {
-  color: #5d64a5;
-  border-color: #5d64a5;
-}
-
-.link-blue-secondary:hover, .link-blue-secondary:active, .link-blue-secondary:focus {
-  color: #5d64a5;
-  border-color: #5d64a5;
+  --tw-text-opacity: 1;
+  color: rgb(93 100 165 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(93 100 165 / var(--tw-border-opacity));
 }
 
 .link-orange {
-  color: #dba475;
-  border-color: #dba475;
+  --tw-text-opacity: 1;
+  color: rgb(219 164 117 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(219 164 117 / var(--tw-border-opacity));
 }
 
 .link-orange:hover, .link-orange:active, .link-orange:focus {
-  color: #dba475;
-  border-color: #dba475;
-}
-
-.link-orange-secondary {
-  color: #d09562;
-  border-color: #d09562;
-}
-
-.link-orange-secondary:hover, .link-orange-secondary:active, .link-orange-secondary:focus {
-  color: #d09562;
-  border-color: #d09562;
+  --tw-text-opacity: 1;
+  color: rgb(208 149 98 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(208 149 98 / var(--tw-border-opacity));
 }
 
 .link-yellow {
-  color: #FFC634;
-  border-color: #FFC634;
+  --tw-text-opacity: 1;
+  color: rgb(255 198 52 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(255 198 52 / var(--tw-border-opacity));
 }
 
 .link-yellow:hover, .link-yellow:active, .link-yellow:focus {
-  color: #FFC634;
-  border-color: #FFC634;
+  --tw-text-opacity: 1;
+  color: rgb(255 198 52 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(255 198 52 / var(--tw-border-opacity));
 }
 
 .link-red {
-  color: #cd5f5f;
-  border-color: #cd5f5f;
+  --tw-text-opacity: 1;
+  color: rgb(205 95 95 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(205 95 95 / var(--tw-border-opacity));
 }
 
 .link-red:hover, .link-red:active, .link-red:focus {
-  color: #cd5f5f;
-  border-color: #cd5f5f;
-}
-
-.link-red-secondary {
-  color: #bf2a2a;
-  border-color: #bf2a2a;
-}
-
-.link-red-secondary:hover, .link-red-secondary:active, .link-red-secondary:focus {
-  color: #bf2a2a;
-  border-color: #bf2a2a;
+  --tw-text-opacity: 1;
+  color: rgb(191 42 42 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(191 42 42 / var(--tw-border-opacity));
 }
 
 .list li {
@@ -850,6 +847,7 @@ ol.list {
 .btn:hover, .btn:active, .btn:focus {
   outline-color: rgba(152, 184, 139, 0.5);
   outline-style: dotted;
+  outline-width: 1px;
   outline-offset: 2px;
   background-color: transparent;
   border-width: 2px;
@@ -1034,6 +1032,7 @@ ol.list {
   border-color: rgb(152 184 139 / var(--tw-border-opacity));
   outline-color: rgba(152, 184, 139, 0.5);
   outline-style: dotted;
+  outline-width: 1px;
   outline-offset: 2px;
 }
 
@@ -1078,6 +1077,7 @@ ol.list {
   border-color: rgb(152 184 139 / var(--tw-border-opacity));
   outline-color: rgba(152, 184, 139, 0.5);
   outline-style: dotted;
+  outline-width: 1px;
   outline-offset: 2px;
 }
 
