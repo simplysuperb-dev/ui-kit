@@ -11,7 +11,7 @@ module.exports = ({ theme, e }) => {
         linkColors[`.${e(`link-${key}`)}`] = {
             color: value,
             'border-color': value,
-            '&:hover': {
+            '&:hover, &:active, &:focus': {
                 color: value,
                 'border-color': value,
             }
@@ -25,9 +25,10 @@ module.exports = ({ theme, e }) => {
             cursor: 'pointer',
             color: colors.graphite,
             'border-bottom': '2px solid ' + colors.graphite,
-            '&:hover': {
+            '&:hover, &:active, &:focus': {
                 color: '#000',
                 'border-color': '#000',
+                '@apply ui-outline': {},
             },
         },
         ...linkColors,

@@ -66,6 +66,12 @@
                 <div class="w-20 h-20 bg-yellow text-graphite text-center flex justify-center items-center">
                     <small>yellow</small>
                 </div>
+                <div class="w-20 h-20 bg-red text-white text-center flex justify-center items-center">
+                    <small>red</small>
+                </div>
+                <div class="w-20 h-20 bg-red-secondary text-white text-center flex justify-center items-center">
+                    <small>red secondary</small>
+                </div>
             </div>
         </section>
         <section class="mb-20">
@@ -107,6 +113,20 @@ const myHandler = (event) => {
 </pre>
 
             <div class="flex space-x-10 mt-10">
+                <div>
+                    <ul class="list list-red">
+                        <li>home</li>
+                        <li>about</li>
+                        <li>
+                            social
+                            <ol class="list list-orange">
+                                <li>instagram</li>
+                                <li>facebook</li>
+                                <li>linkedin</li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
                 <div>
                     <ul class="list list-green">
                         <li>Milk</li>
@@ -163,6 +183,12 @@ const myHandler = (event) => {
                 <div class="p-2">
                     <a href="javascript: false" class="link link-yellow">Yellow link</a>
                 </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-red">Red link</a>
+                </div>
+                <div class="p-2">
+                    <a href="javascript: false" class="link link-red-secondary">Red Secondary link</a>
+                </div>
             </div>
         </section>
         <section class="mb-20">
@@ -183,6 +209,9 @@ const myHandler = (event) => {
                 <div class="p-2">
                     <button href="javascript: false" class="btn btn-solid btn-yellow">Default Yellow</button>
                 </div>
+                <div class="p-2">
+                    <button href="javascript: false" class="btn btn-solid btn-red">Default Red</button>
+                </div>
             </div>
 
             <div class="flex flex-wrap mb-2">
@@ -198,6 +227,9 @@ const myHandler = (event) => {
                 <div class="p-2">
                     <button href="javascript: false" class="btn btn-outline btn-yellow">Default Yellow</button>
                 </div>
+                <div class="p-2">
+                    <button href="javascript: false" class="btn btn-outline btn-red">Default Red</button>
+                </div>
             </div>
 
             <div class="flex flex-wrap mb-2">
@@ -212,6 +244,72 @@ const myHandler = (event) => {
                 </div>
                 <div class="p-2">
                     <button href="javascript: false" class="btn btn-link btn-yellow">Default Yellow</button>
+                </div>
+                <div class="p-2">
+                    <button href="javascript: false" class="btn btn-link btn-red">Default Red</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-green font-serif mb-5 desktop:text-h3 text-h4">
+                <span class="text-grey/50">§</span> Form
+            </h2>
+            <div class="flex flex-wrap">
+                <div class="p-2">
+                    <div class="form-element">
+                        <label for="textInput">label</label>
+                        <input type="text" id="textInput" placeholder="my text input..." class="form-input">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="form-element has-error">
+                        <label for="textInputError">label</label>
+                        <input type="text" id="textInputError" placeholder="my text input..." class="form-input">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="form-element">
+                        <label for="textInputFilled">label</label>
+                        <input type="text" id="textInputFilled" placeholder="my text input..." class="form-input"
+                            value="my beautiful text">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap mt-10">
+                <div class="p-2 flex-grow">
+                    <div class="form-element">
+                        <label for="selectMulti">select[multiple]</label>
+                        <select class="form-select" id="selectMulti" multiple>
+                            <option>Milk</option>
+                            <option>Bread</option>
+                            <option>Butter</option>
+                            <option>Beef</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="p-2 flex-grow">
+                    <div class="form-element">
+                        <label for="select">select</label>
+                        <select class="form-select" id="select">
+                            <option>Select an option</option>
+                            <option>Milk</option>
+                            <option>Bread</option>
+                            <option>Butter</option>
+                            <option>Beef</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="p-2 flex-grow">
+                    <div class="form-element has-error">
+                        <label for="selectError">select with an error</label>
+                        <select class="form-select" id="selectError">
+                            <option>Milk</option>
+                            <option>Bread</option>
+                            <option>Butter</option>
+                            <option>Beef</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </section>

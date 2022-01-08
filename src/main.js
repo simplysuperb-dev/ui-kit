@@ -3,14 +3,33 @@ const plugin = require('tailwindcss/plugin');
 const link = require('./components/link');
 const list = require('./components/list');
 const btn = require('./components/btn');
+const forms = require('./components/form');
+const input = require('./components/form/input');
+const select = require('./components/form/select');
 const font = require('./font');
+const outline = require('./utilities/outline');
 
-module.exports = plugin(function ({ addComponents, theme, e }) {
+module.exports = plugin(function ({ addUtilities, addComponents, theme, e }) {
+    
+    addUtilities([
+        outline({theme})
+    ]);
+
     addComponents([
+        // Registering fonts
         font.faces,
+
+
+        // Basic Components
         link({ theme, e }),
         list({ theme, e }),
         btn({ theme, e }),
+
+        // Complex Components
+        // Forms
+        forms,
+        input,
+        select,
     ]);
 }, {
     theme: {
@@ -27,6 +46,8 @@ module.exports = plugin(function ({ addComponents, theme, e }) {
             orange: '#dba475',
             'orange-secondary': '#d09562',
             yellow: '#FFC634',
+            red: '#cd5f5f',
+            'red-secondary': '#bf2a2a',
         },
         fontFamily: font.family,
         screens: {

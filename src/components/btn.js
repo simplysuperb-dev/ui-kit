@@ -35,6 +35,7 @@ module.exports = ({ theme, e }) => {
             '@apply border-2 border-transparent': {},
             'background-color': 'transparent',
             '&:hover, &:active, &:focus': {
+                '@apply ui-outline': {},
                 '@apply bg-transparent': {},
                 '@apply border-2 border-transparent': {},
             }
