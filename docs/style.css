@@ -983,6 +983,7 @@ ol.list {
 }
 
 .form-element {
+  font-family: "Merriweather Sans", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -992,12 +993,14 @@ ol.list {
   border-color: rgb(205 95 95 / var(--tw-border-opacity));
 }
 
-.form-element.has-error label {
+.form-element.has-error .form-label {
   --tw-text-opacity: 1;
   color: rgb(205 95 95 / var(--tw-text-opacity));
 }
 
-.form-element label {
+.form-element .form-label {
+  font-family: Merriweather, serif;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -1008,7 +1011,6 @@ ol.list {
   border-color: rgb(46 46 46 / var(--tw-border-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-family: Merriweather, serif;
 }
 
 .form-input::-moz-placeholder {
@@ -1053,7 +1055,6 @@ ol.list {
   border-color: rgb(46 46 46 / var(--tw-border-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-family: Merriweather, serif;
 }
 
 .form-select::-moz-placeholder {
@@ -1086,6 +1087,25 @@ ol.list {
   outline-offset: 2px;
 }
 
+.form-radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 0.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(152 184 139 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.form-radio:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%2398b88b' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='4'/%3e%3c/svg%3e");
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1116,8 +1136,16 @@ ol.list {
   margin-top: 2.5rem;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .h-20 {

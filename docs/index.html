@@ -258,19 +258,19 @@ const myHandler = (event) => {
             <div class="flex flex-wrap">
                 <div class="p-2">
                     <div class="form-element">
-                        <label for="textInput">label</label>
+                        <label for="textInput" class="form-label">label</label>
                         <input type="text" id="textInput" placeholder="my text input..." class="form-input">
                     </div>
                 </div>
                 <div class="p-2">
                     <div class="form-element has-error">
-                        <label for="textInputError">label</label>
+                        <label for="textInputError" class="form-label">label</label>
                         <input type="text" id="textInputError" placeholder="my text input..." class="form-input">
                     </div>
                 </div>
                 <div class="p-2">
                     <div class="form-element">
-                        <label for="textInputFilled">label</label>
+                        <label for="textInputFilled" class="form-label">label</label>
                         <input type="text" id="textInputFilled" placeholder="my text input..." class="form-input"
                             value="my beautiful text">
                     </div>
@@ -279,7 +279,7 @@ const myHandler = (event) => {
             <div class="flex flex-wrap mt-10">
                 <div class="p-2 flex-grow">
                     <div class="form-element">
-                        <label for="selectMulti">select[multiple]</label>
+                        <label for="selectMulti" class="form-label">select[multiple]</label>
                         <select class="form-select" id="selectMulti" multiple>
                             <option>Milk</option>
                             <option>Bread</option>
@@ -290,7 +290,7 @@ const myHandler = (event) => {
                 </div>
                 <div class="p-2 flex-grow">
                     <div class="form-element">
-                        <label for="select">select</label>
+                        <label for="select" class="form-label">select</label>
                         <select class="form-select" id="select">
                             <option>Select an option</option>
                             <option>Milk</option>
@@ -302,7 +302,7 @@ const myHandler = (event) => {
                 </div>
                 <div class="p-2 flex-grow">
                     <div class="form-element has-error">
-                        <label for="selectError">select with an error</label>
+                        <label for="selectError" class="form-label">select with an error</label>
                         <select class="form-select" id="selectError">
                             <option>Milk</option>
                             <option>Bread</option>
@@ -312,7 +312,26 @@ const myHandler = (event) => {
                     </div>
                 </div>
             </div>
-        </section>
+
+            <div class="flex flex-wrap mt-10">
+                <div class="p-2">
+                    <div class="form-element">
+                        <span class="form-label">Are you amazing?</span>
+                        <div class="flex">
+                            <div class="inline-flex items-center">
+                                <input type="radio" id="yesRadio" name="amazing" class="form-radio">
+                                <label for="yesRadio">Yes</label>
+                            </div>
+                            <div class="inline-flex items-center ml-6">
+                                <input type="radio" id="heckYesRadio" name="amazing" class="form-radio">
+                                <label for="heckYesRadio">Heck, Yes!</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
     </div>
 </body>
 

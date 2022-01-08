@@ -1,18 +1,22 @@
 const plugin = require('tailwindcss/plugin');
 
+const font = require('./font');
+
 const link = require('./components/link');
 const list = require('./components/list');
 const btn = require('./components/btn');
+
 const forms = require('./components/form');
 const input = require('./components/form/input');
 const select = require('./components/form/select');
-const font = require('./font');
+const radio = require('./components/form/radio');
+
 const outline = require('./utilities/outline');
 
 module.exports = plugin(function ({ addUtilities, addComponents, theme, e }) {
-    
+
     addUtilities([
-        outline({theme})
+        outline({ theme })
     ]);
 
     addComponents([
@@ -30,6 +34,7 @@ module.exports = plugin(function ({ addUtilities, addComponents, theme, e }) {
         forms,
         input,
         select,
+        radio({ theme }),
     ]);
 }, {
     theme: {

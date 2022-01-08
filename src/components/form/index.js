@@ -1,15 +1,17 @@
 module.exports = {
     '.form-element': {
+        '@apply font-sans': {},
         '@apply flex flex-col': {},
         '&.has-error': {
             '.form-input': {
                 '@apply border-red': {},
             },
-            label: {
+            '.form-label': {
                 '@apply text-red': {},
             }
         },
-        label: {
+        '.form-label': {
+            '@apply font-serif font-bold': {},
             '@apply mb-2': {},
         },
     }
