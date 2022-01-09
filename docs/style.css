@@ -838,8 +838,8 @@ ol.list {
 }
 
 .btn {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1.143rem;
+  line-height: 1.571rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -850,10 +850,6 @@ ol.list {
 }
 
 .btn:hover, .btn:active, .btn:focus {
-  outline-color: rgba(152, 184, 139, 0.5);
-  outline-style: dotted;
-  outline-width: 1px;
-  outline-offset: 2px;
   background-color: transparent;
   border-width: 2px;
   border-color: transparent;
@@ -1349,38 +1345,38 @@ ol.list {
 }
 
 .text-h3 {
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 3.429rem;
+  line-height: 4.286rem;
 }
 
 .text-base {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.714rem;
 }
 
 .text-h4 {
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 2.429rem;
+  line-height: 3rem;
 }
 
 .text-h6 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.714rem;
+  line-height: 2.286rem;
 }
 
 .text-h1 {
-  font-size: 96px;
-  line-height: 120px;
+  font-size: 5.857rem;
+  line-height: 7.571rem;
 }
 
 .text-h2 {
-  font-size: 60px;
-  line-height: 75px;
+  font-size: 4.286rem;
+  line-height: 5.357rem;
 }
 
 .text-h5 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.714rem;
+  line-height: 2.286rem;
 }
 
 .font-thin {
@@ -1429,12 +1425,12 @@ ol.list {
   }
 
   .desktop\:text-h2 {
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 4.286rem;
+    line-height: 5.357rem;
   }
 
   .desktop\:text-h3 {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 3.429rem;
+    line-height: 4.286rem;
   }
 }
