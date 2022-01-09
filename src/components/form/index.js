@@ -10,7 +10,7 @@ module.exports = {
                 '@apply text-red': {},
             },
             '.form-checkbox': {
-                '@apply border-red': {},
+                '@apply border-red' : {},
             }
         },
         '.form-label': {

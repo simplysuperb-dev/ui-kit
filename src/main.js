@@ -13,6 +13,7 @@ const radio = require('./components/form/radio');
 const checkbox = require('./components/form/checkbox');
 
 const outline = require('./utilities/outline');
+const textarea = require('./components/form/textarea');
 
 module.exports = plugin(function ({ addUtilities, addComponents, theme, e }) {
 
@@ -35,6 +36,7 @@ module.exports = plugin(function ({ addUtilities, addComponents, theme, e }) {
         forms,
         input,
         select,
+        textarea,
         radio({ theme }),
         checkbox({ theme }),
     ]);

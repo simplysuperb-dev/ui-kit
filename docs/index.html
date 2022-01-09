@@ -334,8 +334,19 @@ const myHandler = (event) => {
                     <div class="form-element flex-row">
                         <div class="inline-flex items-center">
                             <input type="checkbox" id="checkbox" name="checkbox" class="form-checkbox">
-                            <label for="checkbox" class="ml-1">Yes, I accept the terms I never read</label>
+                            <label for="checkbox">Yes, I accept the terms I never read</label>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap mt-10">
+                <div class="p-2 w-full">
+                    <div class="form-element has-error">
+                        <label for="textarea" class="form-label">
+                            Textarea
+                        </label>
+                        <textarea class="form-textarea" name="textarea" id="textarea" placeholder="my amazing textarea..."></textarea>
+                        <p class="text-red-secondary">Your content is just too awesome...</p>
                     </div>
                 </div>
             </div>
