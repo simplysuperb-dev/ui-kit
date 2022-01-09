@@ -8,6 +8,9 @@ module.exports = {
             },
             '.form-label': {
                 '@apply text-red': {},
+            },
+            '.form-checkbox': {
+                '@apply border-red': {},
             }
         },
         '.form-label': {
