@@ -13,7 +13,7 @@
 
 TailwindCSS powered UI kit following simply superb.'s design system.
 
-[➡️ Demo available here](https://simplysuperb-dev.github.io/)
+[➡️ Demo available here](https://simplysuperb-dev.github.io/ui-kit/)
 
 ## Why
 I am building few applications (iOS / Android / Mobile), which share common visual elements, so I am using this kit for another package containing React components and wanted to wrap common tailwindcss utilities as components.
