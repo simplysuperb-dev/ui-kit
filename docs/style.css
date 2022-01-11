@@ -855,6 +855,13 @@ ol.list {
   border-color: transparent;
 }
 
+.btn:focus {
+  outline-color: rgba(152, 184, 139, 0.5);
+  outline-style: dotted;
+  outline-width: 1px;
+  outline-offset: 2px;
+}
+
 .btn-green {
   --tw-text-opacity: 1;
   color: rgb(152 184 139 / var(--tw-text-opacity));
