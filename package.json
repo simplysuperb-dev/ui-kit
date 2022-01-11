@@ -28,8 +28,10 @@
   "homepage": "https://github.com/simplysuperb-dev/ui-kit#readme",
   "devDependencies": {
     "live-server": "^1.2.1",
-    "mini-svg-data-uri": "^1.4.3",
-    "tailwindcss": "^3.0.9",
-    "tinycolor2": "^1.4.2"
+    "tailwindcss": "^3.0.9"
+  },
+  "dependencies": {
+    "tinycolor2": "^1.4.2",
+    "mini-svg-data-uri": "^1.4.3"
   }
 }
