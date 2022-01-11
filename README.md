@@ -207,5 +207,6 @@ release <type>
 Then use `npm` to publish the version:
 
 ```
-npm publish --registry=https://npm.pkg.github.com/simplysuperb-dev # with --registry=https://registry.npmjs.org for npmjs registry
+npm publish --registry=https://npm.pkg.github.com/simplysuperb-dev
+npm publish --registry=https://registry.npmjs.org
 ```
