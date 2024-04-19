@@ -16,11 +16,14 @@ TailwindCSS powered UI kit following simply superb.'s design system.
 [➡️ Demo available here](https://simplysuperb-dev.github.io/ui-kit/)
 
 ## Why
-I am building few applications (iOS / Android / Mobile), which share common visual elements, so I am using this kit for another package containing React components and wanted to wrap common tailwindcss utilities as components.
+
+I am building few applications (iOS / Android / Mobile), which share common visual elements, so I am using this kit for
+another package containing React components and wanted to wrap common tailwindcss utilities as components.
 
 ## Installation
 
 Install the tailwindcss plugin:
+
 ```
 npm install --save-dev @simplysuperb-dev/ui-kit
 ```
@@ -30,10 +33,10 @@ Then require it in your `tailwind.config.js`:
 ```js
 //tailwind.config.js
 module.exports = {
-    ...
-    plugins: [
-        require('@simplysuperb-dev/ui-kit')
-    ],
+  //...
+  plugins: [
+    require('@simplysuperb-dev/ui-kit')
+  ],
 }
 ```
 
@@ -41,9 +44,11 @@ module.exports = {
 
 ### Colors
 
-All defined colors are used for generating classes for styling: `.list`, `.link` and `.btn` aswell. Refer to the [source code](https://github.com/simplysuperb-dev/ui-kit/tree/main/src/components) of each of those components for their further usage.
+All defined colors are used for generating classes for styling: `.list`, `.link` and `.btn` aswell. Refer to
+the [source code](https://github.com/simplysuperb-dev/ui-kit/tree/main/src/components) of each of those components for
+their further usage.
 
-List of colors: 
+List of colors:
 
 - **transparent**: transparent
 - **white**: #FFFFFF
@@ -63,19 +68,25 @@ List of colors:
 ### Typography
 
 **Fonts**
+
 - `.font-serif`: Merriweather
 - `.font-sans`: Merriweather Sans
 
 **Font Sizes**
-- `.text-h1` / `.text-h2` / `.text-h3` / `.text-h4` / `.text-h5` / `.text-h6`: heading styles that should be used in combination with `.font-serif`
+
+- `.text-h1` / `.text-h2` / `.text-h3` / `.text-h4` / `.text-h5` / `.text-h6`: heading styles that should be used in
+  combination with `.font-serif`
 - `.text-subtitle` / `.text-caption` / `.text-overline`: used for adding emphasis
 - `.text-base`: resetting the font size
 - `.text-button`: used on `.btn` components
 
 ### Basic Components
+
 **`.list`**
+
 ```html
-  <ul class="list list-red">
+
+<ul class="list list-red">
     <li>home</li>
     <li>about</li>
     <li>
@@ -84,12 +95,13 @@ List of colors:
             <li>instagram</li>
             <li>facebook</li>
             <li>linkedin</li>
-        </ul>
-    </li>
+</ul>
+</li>
 </ul>
 ```
 
 **`.link`**
+
 ```html
 <a href="javascript: false" class="link link-green">Green link</a>
 ```
@@ -98,7 +110,7 @@ List of colors:
 
 ```html
 <!-- Solid -->
- <button class="btn btn-solid btn-green">Default Green</button>
+<button class="btn btn-solid btn-green">Default Green</button>
 
 <!-- Outline -->
 <button class="btn btn-outline btn-green">Default Green</button>
@@ -107,23 +119,27 @@ List of colors:
 <button class="btn btn-link btn-green">Default Green</button>
  ```
 
- ### Form components
+### Form components
 
-Form components must be wrapped inside a `.form-element` div and by adding `has-error` class to that div they will be styled properly to indicate any validation errors.
+Form components must be wrapped inside a `.form-element` div and by adding `has-error` class to that div they will be
+styled properly to indicate any validation errors.
 
 Additionally you might use `.form-label` for styling `<label>` elements in forms.
 
- #### `.input`
+#### `.input`
 
  ```html
- <div class="form-element">
+
+<div class="form-element">
     <label for="textInput" class="form-label">label</label>
     <input type="text" id="textInput" placeholder="my text input..." class="form-input">
 </div>
 ```
 
- #### `.select`
+#### `.select`
+
  ```html
+
 <div class="form-element">
     <label for="select" class="form-label">select</label>
     <select class="form-select" id="select">
@@ -136,8 +152,10 @@ Additionally you might use `.form-label` for styling `<label>` elements in forms
 </div>
 ```
 
- #### `.textarea`
+#### `.textarea`
+
  ```html
+
 <div class="form-element ">
     <label for="textarea" class="form-label">
         Textarea
@@ -145,8 +163,11 @@ Additionally you might use `.form-label` for styling `<label>` elements in forms
     <textarea class="form-textarea" name="textarea" id="textarea" placeholder="my amazing textarea..."></textarea>
 </div>
 ```
- #### `.radio`
+
+#### `.radio`
+
  ```html
+
 <div class="form-element">
     <span class="form-label">Are you amazing?</span>
     <div class="flex">
@@ -161,8 +182,11 @@ Additionally you might use `.form-label` for styling `<label>` elements in forms
     </div>
 </div>
 ```
- #### `.checkbox`
+
+#### `.checkbox`
+
  ```html
+
 <div class="form-element flex-row">
     <div class="inline-flex items-center">
         <input type="checkbox" id="checkbox" name="checkbox" class="form-checkbox">
@@ -174,6 +198,7 @@ Additionally you might use `.form-label` for styling `<label>` elements in forms
 ### Utilities
 
 ### `.ui-outline`
+
 Beautifully styled outline that can be applied on `:hover`, `:focus` or `:active` states.
 
 ## Modifying
@@ -195,6 +220,10 @@ Or if you have [`concurrently`](https://www.npmjs.com/package/concurrently) inst
 ```
 npm run dev
 ```
+
+> Note: There's an issue with the `live-server` package used for the development
+> server. [Link to issue](https://github.com/tapio/live-server/issues/394). I've installed a specific commit of the
+> package where the problem is not there yet.
 
 ## Releasing new versions
 

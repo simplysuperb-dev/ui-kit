@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.9 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -30,9 +30,13 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,6 +48,12 @@ html {
   /* 3 */
   font-family: "Merriweather Sans", sans-serif;
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -115,8 +125,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -125,8 +137,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -185,9 +201,17 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
+  font-weight: inherit;
+  /* 1 */
   line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
   /* 1 */
   color: inherit;
   /* 1 */
@@ -212,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -334,6 +358,14 @@ menu {
 }
 
 /*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
 Prevent resizing textareas horizontally by default.
 */
 
@@ -347,13 +379,6 @@ textarea {
 */
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -415,16 +440,118 @@ video {
   height: auto;
 }
 
-/*
-Ensure the default browser behavior of the `hidden` attribute.
-*/
+/* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden] {
   display: none;
 }
 
 *, ::before, ::after {
-  border-color: currentColor;
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .container {
@@ -668,9 +795,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .link {
-  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   cursor: pointer;
@@ -1028,13 +1153,6 @@ ol.list {
   font-style: italic;
 }
 
-.form-input:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(152 184 139 / var(--tw-placeholder-opacity));
-  font-family: Merriweather, serif;
-  font-style: italic;
-}
-
 .form-input::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(152 184 139 / var(--tw-placeholder-opacity));
@@ -1072,13 +1190,6 @@ ol.list {
   font-style: italic;
 }
 
-.form-select:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(152 184 139 / var(--tw-placeholder-opacity));
-  font-family: Merriweather, serif;
-  font-style: italic;
-}
-
 .form-select::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(152 184 139 / var(--tw-placeholder-opacity));
@@ -1110,13 +1221,6 @@ ol.list {
 }
 
 .form-textarea::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(152 184 139 / var(--tw-placeholder-opacity));
-  font-family: Merriweather, serif;
-  font-style: italic;
-}
-
-.form-textarea:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(152 184 139 / var(--tw-placeholder-opacity));
   font-family: Merriweather, serif;
@@ -1186,28 +1290,28 @@ ol.list {
   margin-bottom: 2.5rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-20 {
   margin-bottom: 5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .flex {
@@ -1250,16 +1354,16 @@ ol.list {
   justify-content: center;
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-auto {
@@ -1269,6 +1373,16 @@ ol.list {
 .border-porcelain {
   --tw-border-opacity: 1;
   border-color: rgb(241 243 244 / var(--tw-border-opacity));
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 143 184 / var(--tw-bg-opacity));
+}
+
+.bg-blue-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(93 100 165 / var(--tw-bg-opacity));
 }
 
 .bg-graphite {
@@ -1291,11 +1405,6 @@ ol.list {
   background-color: rgb(170 170 170 / var(--tw-bg-opacity));
 }
 
-.bg-porcelain {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 243 244 / var(--tw-bg-opacity));
-}
-
 .bg-orange {
   --tw-bg-opacity: 1;
   background-color: rgb(219 164 117 / var(--tw-bg-opacity));
@@ -1306,19 +1415,9 @@ ol.list {
   background-color: rgb(208 149 98 / var(--tw-bg-opacity));
 }
 
-.bg-blue {
+.bg-porcelain {
   --tw-bg-opacity: 1;
-  background-color: rgb(139 143 184 / var(--tw-bg-opacity));
-}
-
-.bg-blue-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(93 100 165 / var(--tw-bg-opacity));
-}
-
-.bg-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 198 52 / var(--tw-bg-opacity));
+  background-color: rgb(241 243 244 / var(--tw-bg-opacity));
 }
 
 .bg-red {
@@ -1331,44 +1430,34 @@ ol.list {
   background-color: rgb(191 42 42 / var(--tw-bg-opacity));
 }
 
-.p-5 {
-  padding: 1.25rem;
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 198 52 / var(--tw-bg-opacity));
 }
 
 .p-2 {
   padding: 0.5rem;
 }
 
-.text-center {
-  text-align: center;
+.p-5 {
+  padding: 1.25rem;
 }
 
-.font-serif {
-  font-family: Merriweather, serif;
+.text-center {
+  text-align: center;
 }
 
 .font-sans {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-.text-h3 {
-  font-size: 3.429rem;
-  line-height: 4.286rem;
+.font-serif {
+  font-family: Merriweather, serif;
 }
 
 .text-base {
   font-size: 1rem;
   line-height: 1.714rem;
-}
-
-.text-h4 {
-  font-size: 2.429rem;
-  line-height: 3rem;
-}
-
-.text-h6 {
-  font-size: 1.714rem;
-  line-height: 2.286rem;
 }
 
 .text-h1 {
@@ -1381,17 +1470,32 @@ ol.list {
   line-height: 5.357rem;
 }
 
+.text-h3 {
+  font-size: 3.429rem;
+  line-height: 4.286rem;
+}
+
+.text-h4 {
+  font-size: 2.429rem;
+  line-height: 3rem;
+}
+
 .text-h5 {
   font-size: 1.714rem;
   line-height: 2.286rem;
 }
 
-.font-thin {
-  font-weight: 100;
+.text-h6 {
+  font-size: 1.714rem;
+  line-height: 2.286rem;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .text-graphite {
@@ -1408,14 +1512,14 @@ ol.list {
   color: rgb(170 170 170 / 0.5);
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-red-secondary {
   --tw-text-opacity: 1;
   color: rgb(191 42 42 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 960px) {
